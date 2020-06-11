@@ -24,6 +24,10 @@ class Form extends Component {
                     placeholder="Enter Password"
                     id="password" />
                 </div>
+                <input
+                type="submit"
+                value="Submit"
+                id="submit" />
             </form>
         );
     }
