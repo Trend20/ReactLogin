@@ -27,7 +27,8 @@ class Form extends Component {
                 <input
                 type="submit"
                 value="Submit"
-                id="submit" />
+                id="submit"
+                className="btn btn-primary" />
             </form>
         );
     }
