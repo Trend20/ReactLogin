@@ -8,19 +8,23 @@ class Form extends Component {
     render() { 
         return (
             <form id="form" method="POST">
-                <div className="form-group">
-                    <label>Username</label>
+                <div className="form-group input-container">
+                    <label>
+                        <FontAwesomeIcon icon={faUser} />
+                    </label>
                     <input 
                     type="text"
-                    className="form-control"
+                    className="form-control input"
                     placeholder="Enter Username"
                     id="username" />
                 </div>
-                <div className="form-group">
-                    <label>Password</label>
+                <div className="form-group input-container">
+                    <label>
+                    <FontAwesomeIcon icon={faLock} />
+                    </label>
                     <input 
                     type="password"
-                    className="form-control"
+                    className="form-control input"
                     placeholder="Enter Password"
                     id="password" />
                 </div>
@@ -28,7 +32,7 @@ class Form extends Component {
                 type="submit"
                 value="Submit"
                 id="submit"
-                className="btn btn-primary" />
+                className="btn-primary" />
             </form>
         );
     }
