@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 class Form extends Component {
     render() { 
         return (
-            <div>
+            <form id="form" method="POST">
                 
-            </div>
+            </form>
         );
     }
 }
