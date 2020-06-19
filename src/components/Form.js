@@ -5,6 +5,13 @@ import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { faLock } from '@fortawesome/free-solid-svg-icons';
  
 class Form extends Component {
+    constructor(props){
+        super(props);
+        this.state={
+            username:'',
+            password:'',
+        }
+    }
     render() { 
         return (
             <form id="form" method="POST">
