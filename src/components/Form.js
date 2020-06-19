@@ -12,6 +12,7 @@ class Form extends Component {
             password:'',
         }
     }
+
     render() { 
         return (
             <form id="form" method="POST">
@@ -23,7 +24,10 @@ class Form extends Component {
                     type="text"
                     className="form-control input"
                     placeholder="Enter Username"
-                    id="username" />
+                    id="username" 
+                    value={this.state.username}
+                    onChange={() =>this.handleInput(e)}
+                    />
                 </div>
                 <div className="form-group input-container">
                     <label>
@@ -33,7 +37,10 @@ class Form extends Component {
                     type="password"
                     className="form-control input"
                     placeholder="Enter Password"
-                    id="password" />
+                    id="password" 
+                    value={this.state.password}
+                    onChange={() =>this.handleInput(e)}
+                    />
                 </div>
                 <input
                 type="submit"
