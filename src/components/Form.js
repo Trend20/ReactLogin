@@ -26,7 +26,7 @@ class Form extends Component {
                     placeholder="Enter Username"
                     id="username" 
                     value={this.state.username}
-                    onChange={() =>this.handleInput(e)}
+                    onChange={(e) =>this.handleInput()}
                     />
                 </div>
                 <div className="form-group input-container">
@@ -39,7 +39,7 @@ class Form extends Component {
                     placeholder="Enter Password"
                     id="password" 
                     value={this.state.password}
-                    onChange={() =>this.handleInput(e)}
+                    onChange={(e) =>this.handleInput()}
                     />
                 </div>
                 <input
